@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 //Crear atributos
 public class Cita {
-	private static final String FORMATO_FECHA_HORA=("hh: mm: ss a dd-MMMM-aaaa");
+	private static final String FORMATO_FECHA_HORA=("dd/MM/yyyy HH:mm");
 	private Paciente paciente;
 	private LocalDateTime fechaHora= LocalDateTime.now();
 	
@@ -43,7 +43,7 @@ public class Cita {
 		return fechaHora;
 	}
 	
-	//Añadir fecha y modificarla en un formato.
+	//Aï¿½adir fecha y modificarla en un formato.
 	public void setFechaHora(LocalDateTime fechaHora) {
 		if (fechaHora == null) {
 			throw new IllegalArgumentException("Los datos fechaHora no pueden ser nulos.");
